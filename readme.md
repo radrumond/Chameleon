@@ -41,19 +41,19 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
    - Download the data-set with the command below (requires linux due to wget command, in other os's you might need to download the links manually):
         ```python downloader.py --dataset Wine```
         
-   - PREP THE DOWNLAODED DATA:
+   - Prep the downloaded data:
         ```python prepData.py --dataset Wine```
         
-   - RUN THE EXPERIMENT:
+   - Run the experiment:
         ```python run_perm.py  --checkpoint "./Run" --permuter True --feature_split 8 --dataset Wine```
         
    - Note:
         ```--permutation```    : selects a specific permutation for running multiple
                                experiements with the same permutation when using a feature split
-                               example: --permutation [0,6,4,5,7,2,1,3] for a data set with 8 features when
-                               using "--featuresplit 6" always uses 0,6,4,5,7,2 in training
+                               example: ```--permutation``` [0,6,4,5,7,2,1,3] for a data set with 8 features when
+                               using ```--featuresplit 6``` always uses 0,6,4,5,7,2 in training
         
-        --checkpoint "./Run" : directory for saving checkpoint and model configuration
+        ```--checkpoint "./Run"``` : directory for saving checkpoint and model configuration
    Data set names:
         Wine, Telescope, Abalone, Heart
         
