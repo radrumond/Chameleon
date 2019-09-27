@@ -1,0 +1,23 @@
+absl-py 0.6.1
+astor 0.7.1
+certifi 2018.10.15
+gast 0.2.0
+grpcio 1.16.1
+h5py 2.8.0 
+Keras-Applications 1.0.6
+Keras-Preprocessing 1.0.5 
+Markdown 3.0.1 
+mkl-fft 1.0.6 
+mkl-random 1.0.1 
+numpy 1.15.4 pip 18.1 
+protobuf 3.6.1 
+scikit-learn=0.20.2 
+scipy 1.1.0 
+setuptools 40.6.2 
+six 1.11.0 
+sklearn 0.0 
+tensorboard 1.12.0 
+tensorflow 1.12.0 
+termcolor 1.1.0 
+Werkzeug 0.14.1 
+wheel 0.32.3
