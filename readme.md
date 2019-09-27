@@ -2,6 +2,7 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
 
 ## CREDITS
    This code is built on top of Reptile's original implenentation from:
+   
     ```
         Alex Nichol, Joshua Achiam, John Schulman
         Website: https://openai.com/blog/reptile/
@@ -17,6 +18,7 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
      ```
 
    If you use this code, please reference our paper:
+   
      ```
      Chameleon: Learning Model Initializations Across Tasks With Different Schemas
      ```
