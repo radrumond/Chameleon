@@ -1,7 +1,6 @@
 Created by: Lukas Brinkmeyer and Rafael Rego Drumond
 
-CREDITS________________________________________________________________________________________________________
-
+## CREDITS
     This code is built on top of Reptile's original implenentation from:
     ```
         Alex Nichol, Joshua Achiam, John Schulman
@@ -21,8 +20,7 @@ CREDITS_________________________________________________________________________
      ```
      
      ```
-ENVIRONMENT______________________________________________________________________________________________________
-
+## ENVIRONMENT
     The required python 3 libraries for running this file are present in the reccommended.txt file
     
     From the miniconda base instalation you only need to install:
@@ -33,8 +31,7 @@ ENVIRONMENT_____________________________________________________________________
     Miniconda 3.7 link:
     https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
-RUNNING_________________________________________________________________________________________________________
-
+## RUNNING
     Hyper-parameters can be configured in code/args.py
     In order to run the experiments you must:
     
@@ -62,4 +59,3 @@ RUNNING_________________________________________________________________________
         WANRNING!
             This code is supported only for Ubuntu 16.04 and 18.04. To run it in another OS it might need some
             changes in the original code.
-_________________________________________________________________________________________________
