@@ -21,41 +21,41 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
      
      ```
 ## ENVIRONMENT
-    The required python 3 libraries for running this file are present in the reccommended.txt file
+   The required python 3 libraries for running this file are present in the reccommended.txt file
     
-    From the miniconda base instalation you only need to install:
+   From the miniconda base instalation you only need to install:
         tensorflow=1.12.0
         scikit-learn-0.20.2
-    Make sure numpy is also apropriately installed.
+   Make sure numpy is also apropriately installed.
     
-    Miniconda 3.7 link:
-    https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   Miniconda 3.7 link:
+   https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 ## RUNNING
-    Hyper-parameters can be configured in code/args.py
-    In order to run the experiments you must:
+   Hyper-parameters can be configured in code/args.py
+   In order to run the experiments you must:
     
-        #DOWNLOAD THE DATA-SET WITH (REQUIRES LINUX due to wget COMMAND, IN OTHER OS's YOU MIGHT NEED TO DOWNLOAD THE LINKS MANUALLY):
+   DOWNLOAD THE DATA-SET WITH (REQUIRES LINUX due to wget COMMAND, IN OTHER OS's YOU MIGHT NEED TO DOWNLOAD THE LINKS MANUALLY):
         ```python downloader.py --dataset Wine```
         
-        #PREP THE DOWNLAODED DATA:
+   PREP THE DOWNLAODED DATA:
         ```python prepData.py --dataset Wine```
         
-        #RUN THE EXPERIMENT:
+   RUN THE EXPERIMENT:
         ```python run_perm.py  --checkpoint "./Run" --permuter True --feature_split 8 --dataset Wine```
         
-    Note:
+   Note:
         --permutation        : selects a specific permutation for running multiple
                                experiements with the same permutation when using a feature split
                                example: --permutation [0,6,4,5,7,2,1,3] for a data set with 8 features when
                                using "--featuresplit 6" always uses 0,6,4,5,7,2 in training
         
         --checkpoint "./Run" : directory for saving checkpoint and model configuration
-    Data set names:
+   Data set names:
         Wine, Telescope, Abalone, Heart
         
         *Heart includes "Heart Disease" and "Diabetes"
         
-        WANRNING!
+   WANRNING!
             This code is supported only for Ubuntu 16.04 and 18.04. To run it in another OS it might need some
             changes in the original code.
