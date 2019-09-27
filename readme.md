@@ -1,7 +1,7 @@
 Created by: Lukas Brinkmeyer and Rafael Rego Drumond
 
 ## CREDITS
-    This code is built on top of Reptile's original implenentation from:
+   This code is built on top of Reptile's original implenentation from:
     ```
         Alex Nichol, Joshua Achiam, John Schulman
         Website: https://openai.com/blog/reptile/
@@ -16,11 +16,12 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
         }
      ```
 
-     If you use this code, please reference our paper:
+   If you use this code, please reference our paper:
      ```
-     
+     Chameleon: Learning Model Initializations Across Tasks With Different Schemas
      ```
-## ENVIRONMENT
+ 
+ ## ENVIRONMENT
    The required python 3 libraries for running this file are present in the reccommended.txt file
     
    From the miniconda base instalation you only need to install:
@@ -35,17 +36,17 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
    Hyper-parameters can be configured in code/args.py
    In order to run the experiments you must:
     
-   DOWNLOAD THE DATA-SET WITH (REQUIRES LINUX due to wget COMMAND, IN OTHER OS's YOU MIGHT NEED TO DOWNLOAD THE LINKS MANUALLY):
+   - Download the data-set with the command below (requires linux due to wget command, in other os's you might need to download the links manually):
         ```python downloader.py --dataset Wine```
         
-   PREP THE DOWNLAODED DATA:
+   - PREP THE DOWNLAODED DATA:
         ```python prepData.py --dataset Wine```
         
-   RUN THE EXPERIMENT:
+   - RUN THE EXPERIMENT:
         ```python run_perm.py  --checkpoint "./Run" --permuter True --feature_split 8 --dataset Wine```
         
-   Note:
-        --permutation        : selects a specific permutation for running multiple
+   - Note:
+        ```--permutation```    : selects a specific permutation for running multiple
                                experiements with the same permutation when using a feature split
                                example: --permutation [0,6,4,5,7,2,1,3] for a data set with 8 features when
                                using "--featuresplit 6" always uses 0,6,4,5,7,2 in training
