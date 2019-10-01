@@ -17,10 +17,19 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
         }
      ```
 
-   If you use this code, please reference our paper:
+   If you use this code, please reference our [paper](https://arxiv.org/abs/1909.13576):
    
      ```
      Chameleon: Learning Model Initializations Across Tasks With Different Schemas
+     Lukas Brinkmeyer and Rafael Rego Drumond
+     @misc{brinkmeyer2019chameleon,
+       title={Chameleon: Learning Model Initializations Across Tasks With Different Schemas},
+       author={Lukas Brinkmeyer and Rafael Rego Drumond and Randolf Scholz and Josif Grabocka and Lars Schmidt-Thieme},
+       year={2019},
+       eprint={1909.13576},
+       archivePrefix={arXiv},
+       primaryClass={cs.LG}
+     }
      ```
  
  ## ENVIRONMENT
