@@ -17,7 +17,7 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
         }
      ```
 
-   If you use this code, please reference our [paper](https://arxiv.org/abs/1909.13576):
+   If you use our code, please reference the paper above and our [paper](https://arxiv.org/abs/1909.13576):
    
      ```
      Chameleon: Learning Model Initializations Across Tasks With Different Schemas
