@@ -3,34 +3,36 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
 ## CREDITS
    This code is built on top of Reptile's original implenentation from:
    
-    ```
+    
         Alex Nichol, Joshua Achiam, John Schulman
         Website: https://openai.com/blog/reptile/
         Git:     https://github.com/openai/supervised-reptile
         Paper:   https://arxiv.org/abs/1803.02999
-        @article{nichol2018first,
-              title={On first-order meta-learning algorithms},
-              author={Nichol, Alex and Achiam, Joshua and Schulman, John},
-              journal={CoRR, abs/1803.02999},
-              volume={2},
-              year={2018}
-        }
-     ```
+        BIBTEX:
+           @article{nichol2018first,
+                 title={On first-order meta-learning algorithms},
+                 author={Nichol, Alex and Achiam, Joshua and Schulman, John},
+                 journal={CoRR, abs/1803.02999},
+                 volume={2},
+                 year={2018}
+           }
+     
 
    If you use our code, please reference the paper above and our [paper](https://arxiv.org/abs/1909.13576):
    
-     ```
+     
      Chameleon: Learning Model Initializations Across Tasks With Different Schemas
      Lukas Brinkmeyer and Rafael Rego Drumond
-     @misc{brinkmeyer2019chameleon,
-       title={Chameleon: Learning Model Initializations Across Tasks With Different Schemas},
-       author={Lukas Brinkmeyer and Rafael Rego Drumond and Randolf Scholz and Josif Grabocka and Lars Schmidt-Thieme},
-       year={2019},
-       eprint={1909.13576},
-       archivePrefix={arXiv},
-       primaryClass={cs.LG}
-     }
-     ```
+     BIBTEX:
+        @misc{brinkmeyer2019chameleon,
+          title={Chameleon: Learning Model Initializations Across Tasks With Different Schemas},
+          author={Lukas Brinkmeyer and Rafael Rego Drumond and Randolf Scholz and Josif Grabocka and Lars Schmidt-Thieme},
+          year={2019},
+          eprint={1909.13576},
+          archivePrefix={arXiv},
+          primaryClass={cs.LG}
+        }
+     
  
  ## ENVIRONMENT
    The required python 3 libraries for running this file are present in the reccommended.txt file
