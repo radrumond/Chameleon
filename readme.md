@@ -63,8 +63,9 @@ Created by: Lukas Brinkmeyer and Rafael Rego Drumond
                                using ```--featuresplit 6``` always uses 0,6,4,5,7,2 in training
         
         ```--checkpoint "./Run"``` : directory for saving checkpoint and model configuration
-   Data set names:
-        Wine, Telescope, Abalone, Heart
+        
+   - Data set names:
+       ``` Wine ```, ```Telescope```, ```Abalone```, ```Heart```
         
         *Heart includes "Heart Disease" and "Diabetes"
         
