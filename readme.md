@@ -1,5 +1,5 @@
 Created by: Lukas Brinkmeyer and Rafael Rego Drumond
-
+VERSION UPDATE FOR 2020 coming soon!
 ## CREDITS
    This code is built on top of Reptile's original implenentation from:
    
