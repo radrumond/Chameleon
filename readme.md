@@ -1,5 +1,7 @@
-Created by: Lukas Brinkmeyer and Rafael Rego Drumond
-VERSION UPDATE FOR 2020 coming soon!
+# Chameleon V2
+
+## Created by: Lukas Brinkmeyer and Rafael Rego Drumond
+
 ## CREDITS
    This code is built on top of Reptile's original implenentation from:
    
@@ -33,44 +35,61 @@ VERSION UPDATE FOR 2020 coming soon!
           primaryClass={cs.LG}
         }
      
- 
- ## ENVIRONMENT
-   The required python 3 libraries for running this file are present in the reccommended.txt file
-    
-   From the miniconda base instalation you only need to install:
-        tensorflow=1.12.0
-        scikit-learn-0.20.2
-   Make sure numpy is also apropriately installed.
-    
-   Miniconda 3.7 link:
-   https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
-## RUNNING
-   Hyper-parameters can be configured in code/args.py
-   In order to run the experiments you must:
-    
-   - Download the data-set with the command below (requires linux due to wget command, in other os's you might need to download the links manually):
-        ```python downloader.py --dataset Wine```
-        
-   - Prep the downloaded data:
-        ```python prepData.py --dataset Wine```
-        
-   - Run the experiment:
-        ```python run_perm.py  --checkpoint "./Run" --permuter True --feature_split 8 --dataset Wine```
-        
-   - Note:
-        ```--permutation```    : selects a specific permutation for running multiple
-                               experiements with the same permutation when using a feature split
-                               example: ```--permutation``` [0,6,4,5,7,2,1,3] for a data set with 8 features when
-                               using ```--featuresplit 6``` always uses 0,6,4,5,7,2 in training
-        
-        ```--checkpoint "./Run"``` : directory for saving checkpoint and model configuration
-        
-   - Data set names:
-       ``` Wine ```, ```Telescope```, ```Abalone```, ```Heart```
-        
-        *Heart includes "Heart Disease" and "Diabetes"
-        
-   WANRNING!
-            This code is supported only for Ubuntu 16.04 and 18.04. To run it in another OS it might need some
-            changes in the original code.
+
+## DOWNLOADING DATASETS:
+
+   Most of the used datasets are in OpenML
+   Run the script ```openmldataset/openml_download.py``` to download the datasets used in the paper.
+   In each folder you will have ```features.npy``` and ```labels.npy```, if you want combined experiments copy from the other folders as ```features_test.npy``` and ```labels_test.npy``` to be used as meta-test-set
+
+## RECOMMENDED PACKAGES:
+
+   You can check our recommended packages in the file ```recommended.txt```
+
+## ARGUMENTS:
+
+   Run the ```run.py``` to run the code, you can use the following arguments.
+   Resulting learning curves will be saved in the ```results``` folder
+```
+  --seed SEED           random seed (default: 0)
+  --checkpoint CHECKPOINT
+                        checkpoint directory (default: model_checkpoint)
+  --save_path SAVE_PATH
+                        checkpoint directory (default: exp_1581008235)
+  --num_jobs NUM_JOBS   Number of jobs to run in parallel (default: 5)
+  --inner_batch INNER_BATCH
+                        inner batch size (default: 30)
+  --inner_iters INNER_ITERS
+                        inner iterations (default: 10)
+  --learning_rate LEARNING_RATE
+                        Adam step size (default: 0.0001)
+  --meta_step META_STEP
+                        meta-training step size (default: 0.01)
+  --meta_batch META_BATCH
+                        meta-training batch size (default: 1)
+  --meta_iters META_ITERS
+                        meta-training iterations (default: 15001)
+  --min_feats MIN_FEATS
+                        Min number of features (default: 4)
+  --max_feats MAX_FEATS
+                        Max number of features (default: 8)
+  --freeze FREEZE       whether a permuting network is added (default: False)
+  --conv_layers CONV_LAYERS
+                        Number and size of conv layers (default: [8,16,14])
+  --base_layers BASE_LAYERS
+                        Number and size of base layers (default: [64,64])
+  --perm_epochs PERM_EPOCHS
+                        training epochs for permuter (default: 501)
+  --perm_lr PERM_LR     permuter learning rate (default: 0.0001)
+  --num_test_features NUM_TEST_FEATURES
+                        Ratio of feature split for train test (default: 0)
+  --test_feat_ratio TEST_FEAT_RATIO
+                        Ratio of feature split for train test (default: 0.0)
+  --name NAME           name add-on (default: Model_config-1581008235)
+  --dataset DATASET     data set to evaluate on (default: codrna)
+  --data_dir DATA_DIR   Path to datasets (default: ./Data/selected)
+  --config CONFIG       json config file (default: None)
+```
+
+--inner_iters 5 --meta_iters 5 --perm_epochs 5

@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+__pycache__
+results/*/
+model_checkpoint/?.json
+Data/*/
+*.json
+Plots
+SELECT.txt
