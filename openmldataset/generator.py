@@ -39,8 +39,8 @@ class genFewShot():
             self.train_y = self.dataset_y
             self.train_f = range(self.totalFeatures)
 
-            self.val_x  = np.load(os.path.join(path, "features.npy"))
-            self.val_y  = np.load(os.path.join(path, "labels.npy"  ))
+            self.val_x  = np.load(os.path.join(path, "features_test.npy"))
+            self.val_y  = np.load(os.path.join(path, "labels_test.npy"  ))
             self.test_f = range(self.val_x.shape[-1])
 
     def setFeatures(self, feats, ratio=None):
